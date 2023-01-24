@@ -77,7 +77,7 @@ public class Dico {
      * @param line le mot dont on veut connaitre l'anagramme
      * @return l'anagramme "alphabétique"
      */
-    protected String anagram(String line) {
+    public String anagram(String line) {
         String word = line.strip();
         char[] chars = word.toCharArray();
         Arrays.sort(chars);
@@ -91,7 +91,7 @@ public class Dico {
      * @param word à normaliser
      * @return le mot normalisé
      */
-    protected String nomalize(String word) {
+    public String nomalize(String word) {
         String result =  word.toLowerCase();
 
         // les ligatures sont wꝡ
