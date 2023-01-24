@@ -2,10 +2,7 @@ package dico;
 
 import org.apache.commons.math3.util.CombinatoricsUtils;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -64,7 +61,7 @@ public class ListAnagram {
      * @return
      */
     private ArrayList<String> getAnamgrams(String word) {
-        String key = dico.nomalize(word.trim());
+        String key = dico.normalize(word.trim());
         key = dico.anagram(key);
         return dico.getDictionnary().get(key);
     }
@@ -77,7 +74,7 @@ public class ListAnagram {
      */
     private HashSet<String> getAllAnamgrams(String word) {
         HashSet<String> possibleAnagrams = new HashSet<>();
-        String key = dico.nomalize(word.trim());
+        String key = dico.normalize(word.trim());
         key = dico.anagram(key);
 
         ArrayList<int[]> subwordIndexes = new ArrayList<>();

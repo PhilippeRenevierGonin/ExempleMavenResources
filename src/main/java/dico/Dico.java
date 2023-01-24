@@ -37,7 +37,7 @@ public class Dico {
         boolean result = filter(word);
 
         if (result) {
-            word = nomalize(word);
+            word = normalize(word);
             String key = anagram(word);
             ArrayList<String> anagrams;
             if (dico.containsKey(key)) {
@@ -91,7 +91,7 @@ public class Dico {
      * @param word à normaliser
      * @return le mot normalisé
      */
-    public String nomalize(String word) {
+    public String normalize(String word) {
         String result =  word.toLowerCase();
 
         // les ligatures sont wꝡ
