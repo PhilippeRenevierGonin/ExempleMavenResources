@@ -15,7 +15,7 @@ class DicoTest {
     }
 
     /**
-     * plusieurs cas de tests, avec des mots existants, une lettre, un mot vide, des suites de lettres
+     * Plusieurs cas de tests, avec des mots existants, une lettre, un mot vide, des suites de lettres
      */
     @Test
     void anagram() {
@@ -28,7 +28,7 @@ class DicoTest {
     }
 
     /**
-     * si on passe null en paramètre, une exception est levée
+     * Si on passe null en paramètre, une exception est levée
      */
     @Test
     void anagramThrowsNull() {

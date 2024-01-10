@@ -12,7 +12,6 @@ import java.io.*;
 import java.nio.channels.FileLock;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -53,7 +52,7 @@ class DicoTextToJSONTest {
     }
 
     /**
-     * test en chargeant un fichier avec une ligne
+     * Test en chargeant un fichier avec une ligne
      */
     @Test
     void loadUnFichierAvecUneLigne() {
@@ -68,7 +67,7 @@ class DicoTextToJSONTest {
 
 
     /**
-     * test en chargeant un fichier "normal", toutes les lignes sont acceptées.
+     * Test en chargeant un fichier "normal", toutes les lignes sont acceptées.
      */
     @Test
     void loadUnFichierFr() {
@@ -82,7 +81,7 @@ class DicoTextToJSONTest {
     }
 
     /**
-     * test en chargeant un fichier vide
+     * Test en chargeant un fichier vide
      */
     @Test
     void loadUnFichierAvecAucuneLigne() {
